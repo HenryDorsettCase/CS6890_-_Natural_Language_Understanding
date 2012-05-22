@@ -1,0 +1,24 @@
+<S>
+E
+</S>
+<V>
+E
+T
+P
+TIMES
+PLUS
+</V>
+<T>
+a
++
+x
+</T>
+<P>
+E ::= T
+E ::= E PLUS T
+T ::= P
+T ::= T TIMES P
+P ::= a
+TIMES ::= x
+PLUS ::= +
+</P>

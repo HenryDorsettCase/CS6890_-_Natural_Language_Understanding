@@ -1,0 +1,27 @@
+Christopher H. Weber
+CS6890 NLP.4 SAM README
+Due: 11/10/09 midnight
+
+HOW TO RUN THE PROGRAM:
+	Feed the program the command line arguments:
+
+		John went to the store . He got a kite . He went home .
+	OR
+		John went to a restaurant . He ordered a lobster . He left .
+
+RESULTS:
+	(SHOPPING        :SHOPPER(HUMAN :NAME(JOHN) :GENDER(MALE))
+	                 :STORE(STORE :NAME(null) :REF(DEF))
+	                 :PRODUCT(KITE :REF(INDEF))
+	                 :SOMEPLACE(LOCATION :NAME(HOME)))
+	(EAT OUT        :DINER(HUMAN :NAME(JOHN) :GENDER(MALE))
+	                :RESTAURANT(RESTAURANT :NAME(null) :REF(INDEF))
+	                :MEAL(LOBSTER :REF(INDEF))
+ 	                :SOMEPLACE(LOCATION :NAME(null)))
+
+NOTES:
+	*SHOPPING and EAT OUT are the names of the instantiated scripts.
+	*The selection restrictions are properly enforced. Check: 
+		-Shopping_Script and the Eat_OutScript classes for the data types. 				
+		-scriptApplier method in the Conceptual Anlyzer class for instanceof.
+		-Class inheritance (extends).

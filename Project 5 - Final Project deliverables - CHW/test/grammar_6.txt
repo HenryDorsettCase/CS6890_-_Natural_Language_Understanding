@@ -1,0 +1,22 @@
+<S>
+S
+</S>
+<E>
+NULL
+</E>
+<V>
+S
+X
+Y
+</V>
+<T>
+a
+b
+</T>
+<P>
+S ::= X Y
+X ::= X a
+Y ::= Y b
+X ::= NULL
+Y ::= NULL
+</P>

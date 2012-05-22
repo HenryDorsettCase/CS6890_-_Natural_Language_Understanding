@@ -1,0 +1,56 @@
+Edge 	anEdge()
+Edge 	anIncidentEdge(Vertex v)
+Edge 	anIncidentEdge(Vertex v, int edgetype)
+boolean 	areIncident(Vertex v, Edge e)
+Edge 	attachVertex(Vertex v, Object vertexInfo, Object edgeInfo)
+Edge 	attachVertexFrom(Vertex v, Object vertexInfo, Object edgeInfo)
+Edge 	attachVertexTo(Vertex v, Object vertexInfo, Object edgeInfo) 
+Vertex 	aVertex()
+boolean 	contains(Accessor p)
+int 	degree(Vertex v)
+int 	degree(Vertex v, int edgetype)
+Vertex 	destination(Edge e)
+EdgeIterator 	edges()
+ObjectIterator 	elements()
+Vertex[] 	endVertices(Edge e)
+EdgeIterator 	incidentEdges(Vertex v)
+EdgeIterator 	incidentEdges(Vertex v, int edgetype)
+Edge 	insertDirectedEdge(Vertex v1, Vertex v2, Object elt)
+Edge 	insertEdge(Vertex v1, Vertex v2, Object elt)
+Vertex 	insertVertex(Object elt)
+boolean 	isDirected(Edge e)
+void 	makeUndirected(Edge e)
+Container 	newContainer()
+int 	numEdges()
+int 	numVertices()
+Vertex 	opposite(Vertex v, Edge e)
+Vertex 	origin(Edge e)
+Object 	removeEdge(Edge e)
+Object 	removeVertex(Vertex v)
+Object 	replaceElement(Accessor p, Object newElement)
+void 	reverseDirection(Edge e)
+void 	setDirectionFrom(Edge e, Vertex v)
+void 	setDirectionTo(Edge e, Vertex v)
+Vertex 	splitEdge(Edge e, Object elt)
+String 	toString()
+           
+Edge 	unsplitEdge(Vertex v, Object o) Note: the "two" edges incident on v cannot be the same edge.
+VertexIterator 	vertices()
+ 
+aCommonVertex, 
+aConnectingEdge, 
+adjacentVertices, 
+adjacentVertices, 
+areAdjacent, 
+areAdjacent, 
+connectingEdges, 
+directedEdges, 
+positions, 
+size, 
+undirectedEdges
+isEmpty, 
+swapElements
+ 
+ 
+
+ 

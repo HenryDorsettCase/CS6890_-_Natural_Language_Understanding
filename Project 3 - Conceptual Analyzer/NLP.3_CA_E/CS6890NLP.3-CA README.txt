@@ -1,0 +1,10 @@
+CS6890 NLP Project 3 - Context Analyzer
+Christopher H. Weber
+READ ME
+
+Insert one of these sentences as command line arguments.
+Note the space before the period.
+
+John gave Mary a book .
+Mary gave a book to John .
+John took Mary to Chicago .
