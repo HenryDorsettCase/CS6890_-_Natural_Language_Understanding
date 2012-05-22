@@ -17,7 +17,7 @@ Earley Recognizer
 
 	Explanation: the command line in my IDE would not accept the
  		asterisk on its own. When given an "*", the command
- 		line args become a list all the project files. Thus I
+ 		line args become a list of all the project files. Thus I
  		changed the symbol to "x".
 
 	Note: Dr. Kulyukin in class Monday evening said that altering
