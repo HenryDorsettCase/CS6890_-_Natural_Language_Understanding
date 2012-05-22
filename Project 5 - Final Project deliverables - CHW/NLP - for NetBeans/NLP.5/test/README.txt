@@ -1,0 +1,47 @@
+READ ME
+
+CS6890 - NLP
+Christopher H Weber
+Final Project - Earley Parser Accepting Epsilon Productions (prints a parse tree)
+
+NOTES: 
+In a final change, the project now accepts and processes all grammars which were causing problems itemized in the report. All that was necessary was to catch a concurrent modification exception (to current chartEntry) and continue.
+
+Ambiguous grammars are still not handled (only partial parse trees are printed, and if more than one variable goes to same terminal (A ::= a, B ::= a), the string will likely not be accepted).
+
+The program contains a boolean debug variable. Set it to true for additional info on the program in action.
+
+1) List of grammars tested:
+
+grammar_1.txt 			  S ::= LP S RP | NULL,  LP ::= (, RP ::= )
+grammar_2.txt 			  S ::= LP S S RP | NULL,  LP ::= (, RP ::= )
+grammar_3.txt 			  S ::= ( S ) | NULL
+grammar_4.txt 			  S ::= T | NULL | S P + T | T + P S, T ::= ( P * P ) | P, P ::= a
+grammar_5.txt 			  S ::= a S | NULL
+grammar_6.txt 			  S ::= X Y, X ::= X a | NULL, Y ::= Y b | NULL
+grammar_7.txt			  S ::= T | U, T ::= B | B U,  U ::= B B | B B U | NULL, B ::= b
+sample_grammar_1.txt (from project 2)  E ::= T | E + T,  T ::= P | T * P, P ::= a
+sample_grammar_2.txt (from project 2)  the large english grammar
+
+2) To run the program:
+
+Use these command line arguments: <test/grammar_file_name.txt> <string to parse>
+
+For example:
+
+test/grammar_1.txt "( ( ) )"
+test/grammar_2.txt "( ( ) ( ) )"
+test/grammar_3.txt "( ( ) )"
+test/grammar_4.txt "a + a ( a * a ) + a"
+test/grammar_5.txt "a a a"
+test/grammar_6.txt "a b b"
+test/grammar_7.txt "b"
+test/sample_grammar_1.txt "a + a * a"
+test/sample_grammar_2.txt "Book this flight."
+
+Or, if running from the jar file:		
+java -cp NLP.5.jar EarleyRecognizer test/grammar_1.txt " "
+
+
+
+ 

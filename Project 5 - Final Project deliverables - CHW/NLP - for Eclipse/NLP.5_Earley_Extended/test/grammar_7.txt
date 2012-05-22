@@ -1,0 +1,25 @@
+<S>
+S
+</S>
+<E>
+NULL
+</E>
+<V>
+S
+U
+T
+B
+</V>
+<T>
+b
+</T>
+<P>
+S ::= T
+S ::= U
+T ::= B U
+T ::= B
+U ::= B B
+U ::= B B U
+U ::= NULL
+B ::= b
+</P>

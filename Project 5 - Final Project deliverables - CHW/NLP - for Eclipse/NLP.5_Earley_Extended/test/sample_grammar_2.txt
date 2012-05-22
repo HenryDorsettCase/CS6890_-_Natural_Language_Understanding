@@ -1,0 +1,59 @@
+<S>
+S
+</S>
+<V>
+S
+NP
+VP
+AUX
+DET
+NOMINAL
+NOUN
+ProperNoun
+VERB
+PREP
+</V>
+<T>
+that
+this
+a
+book
+flight
+meal
+money
+include
+prefer
+does
+from
+to
+on
+Houston
+TWA
+</T>
+<P>
+S ::= NP VP
+S ::= AUX NP VP
+S ::= VP
+NP ::= DET NOMINAL
+NOMINAL ::= NOUN
+NOMINAL ::= NOUN NOMINAL
+NP ::= ProperNoun
+VP ::= VERB
+VP ::= VERB NP
+DET ::= this
+DET ::= that
+DET ::= a
+NOUN ::= book
+NOUN ::= flight
+NOUN ::= meal
+NOUN ::= money
+VERB ::= book
+VERB ::= include
+VERB ::= prefer
+AUX ::= does
+PREP ::= from
+PREP ::= to
+PREP ::= on
+ProperNoun ::= Houston
+ProperNoun ::= TWA
+</P>
